@@ -1,14 +1,14 @@
-From 278946c0c3089749eaf8cc4bebc04ca55f59fdc9 Mon Sep 17 00:00:00 2001
+From e6c086da0ab3ce42c28e703e3cd79dc73aa531fb Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Sun, 24 Mar 2024 10:11:34 -0500
+Date: Wed, 3 Apr 2024 12:11:36 -0500
 Subject: [PATCH] Update setup.py
 
 ---
- setup.py | 113 +++++++++++++++++++++++++++----------------------------
- 1 file changed, 56 insertions(+), 57 deletions(-)
+ setup.py | 116 +++++++++++++++++++++++++++----------------------------
+ 1 file changed, 56 insertions(+), 60 deletions(-)
 
 diff --git a/setup.py b/setup.py
-index caf25c4..24eaaed 100644
+index 4365a392ee..cfc9c317ca 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -27,7 +27,7 @@
@@ -59,7 +59,7 @@ index caf25c4..24eaaed 100644
  
  all_doc_reqs = list(
      set(
-@@ -127,50 +127,49 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
+@@ -127,53 +127,49 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
          "tsv": tsv_reqs,
          "xlsx": xlsx_reqs,
          # Extra requirements for data connectors
@@ -75,6 +75,7 @@ index caf25c4..24eaaed 100644
 -        "biomed": load_requirements("requirements/ingest/biomed.txt"),
 -        "box": load_requirements("requirements/ingest/box.txt"),
 -        "chroma": load_requirements("requirements/ingest/chroma.txt"),
+-        "clarifai": load_requirements("requirements/ingest/clarifai.txt"),
 -        "confluence": load_requirements("requirements/ingest/confluence.txt"),
 -        "delta-table": load_requirements("requirements/ingest/delta-table.txt"),
 -        "discord": load_requirements("requirements/ingest/discord.txt"),
@@ -138,6 +139,8 @@ index caf25c4..24eaaed 100644
          "local-inference": all_doc_reqs,
 -        "paddleocr": load_requirements("requirements/extra-paddleocr.txt"),
 -        "embed-huggingface": load_requirements("requirements/ingest/embed-huggingface.txt"),
+-        "embed-octoai": load_requirements("requirements/ingest/embed-octoai.txt"),
+-        "embed-vertexai": load_requirements("requirements/ingest/embed-vertexai.txt"),
 -        "openai": load_requirements("requirements/ingest/embed-openai.txt"),
 -        "bedrock": load_requirements("requirements/ingest/embed-aws-bedrock.txt"),
 -        "databricks-volumes": load_requirements("requirements/ingest/databricks-volumes.txt"),
