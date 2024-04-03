@@ -1,14 +1,14 @@
-From 8a5abf8e92f69573320df9a92d84e8ab720dab0c Mon Sep 17 00:00:00 2001
+From e6c086da0ab3ce42c28e703e3cd79dc73aa531fb Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 3 Apr 2024 12:07:49 -0500
+Date: Wed, 3 Apr 2024 12:11:36 -0500
 Subject: [PATCH] Update setup.py
 
 ---
- setup.py | 117 +++++++++++++++++++++++++++----------------------------
- 1 file changed, 57 insertions(+), 60 deletions(-)
+ setup.py | 116 +++++++++++++++++++++++++++----------------------------
+ 1 file changed, 56 insertions(+), 60 deletions(-)
 
 diff --git a/setup.py b/setup.py
-index 4365a392ee..a0af9026b8 100644
+index 4365a392ee..cfc9c317ca 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -27,7 +27,7 @@
@@ -59,7 +59,7 @@ index 4365a392ee..a0af9026b8 100644
  
  all_doc_reqs = list(
      set(
-@@ -127,53 +127,50 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
+@@ -127,53 +127,49 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
          "tsv": tsv_reqs,
          "xlsx": xlsx_reqs,
          # Extra requirements for data connectors
@@ -146,7 +146,6 @@ index 4365a392ee..a0af9026b8 100644
 -        "databricks-volumes": load_requirements("requirements/ingest/databricks-volumes.txt"),
 +        "paddleocr": load_requirements("requirements/extra-paddleocr.in"),
 +        "embed-huggingface": load_requirements("requirements/ingest/embed-huggingface.in"),
-+        "embed-octoai": load_requirements("requirements/ingest/embed-octoai.in"),
 +        "openai": load_requirements("requirements/ingest/embed-openai.in"),
 +        "bedrock": load_requirements("requirements/ingest/embed-aws-bedrock.in"),
 +        "databricks-volumes": load_requirements("requirements/ingest/databricks-volumes.in"),
