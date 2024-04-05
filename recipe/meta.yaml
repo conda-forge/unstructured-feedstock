@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: cc65038ee76e63aa48279b70fddfbc8cba2ea5ff34eef778630546c9e366fb3b
+  sha256: f2ed56bffce46dc1e77ab13732a6d6ff989a7793df0ccc64bb63e58af242aa39
   patches:
     - setup.patch
 
@@ -22,40 +22,40 @@ requirements:
     - pip
   run:
     - python >=3.9,<3.12
-    - backoff ==2.2.1
-    - beautifulsoup4 ==4.12.3
+    - backoff
+    - beautifulsoup4
     - certifi ==2024.2.2
-    - chardet ==5.2.0
+    - chardet
     - charset-normalizer ==3.3.2
     - click ==8.1.7
-    - dataclasses-json ==0.6.4
-    - emoji ==2.10.1
-    - filetype ==1.2.0
+    - dataclasses-json
+    - emoji
+    - filetype
     - idna ==3.6
     - joblib ==1.3.2
     - jsonpath-python ==1.0.6
-    - langdetect ==1.0.9
-    - lxml ==5.1.0
+    - langdetect
+    - lxml
     - marshmallow ==3.20.2
     - mypy_extensions ==1.0.0
-    - nltk ==3.8.1
-    - numpy ==1.26.4
+    - nltk
+    - numpy
     - packaging ==23.2
     - python-dateutil ==2.8.2
-    - python-iso639 ==2024.2.7
-    - python-magic ==0.4.27
-    - rapidfuzz ==3.6.1
+    - python-iso639
+    - python-magic
+    - rapidfuzz
     - regex ==2023.12.25
-    - requests ==2.31.0
+    - requests
     - six ==1.16.0
     - soupsieve ==2.5
-    - tabulate ==0.9.0
+    - tabulate
     - tqdm ==4.66.2
-    - typing-extensions ==4.9.0
+    - typing-extensions
     - typing_inspect ==0.9.0
-    - unstructured-client ==0.18.0
+    - unstructured-client <=0.18.0
     - urllib3 ==1.26.18
-    - wrapt ==1.16.0
+    - wrapt
 
 test:
   imports:
