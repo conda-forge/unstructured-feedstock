@@ -1,0 +1,38 @@
+From d32acbaa679bb6e2797bf51572a3bc3790e872c0 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Fri, 5 Apr 2024 19:20:53 -0500
+Subject: [PATCH] Update setup.py
+
+---
+ setup.py | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index 0c122ee42f..164318b384 100644
+--- a/setup.py
++++ b/setup.py
+@@ -128,7 +128,6 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
+         "xlsx": xlsx_reqs,
+         # Extra requirements for data connectors
+         "airtable": load_requirements("requirements/ingest/airtable.in"),
+-        "astra": load_requirements("requirements/ingest/astra.in"),
+         "azure": load_requirements("requirements/ingest/azure.in"),
+         "azure-cognitive-search": load_requirements(
+             "requirements/ingest/azure-cognitive-search.in",
+@@ -136,7 +135,6 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
+         "biomed": load_requirements("requirements/ingest/biomed.in"),
+         "box": load_requirements("requirements/ingest/box.in"),
+         "chroma": load_requirements("requirements/ingest/chroma.in"),
+-        "clarifai": load_requirements("requirements/ingest/clarifai.in"),
+         "confluence": load_requirements("requirements/ingest/confluence.in"),
+         "delta-table": load_requirements("requirements/ingest/delta-table.in"),
+         "discord": load_requirements("requirements/ingest/discord.in"),
+@@ -169,8 +167,6 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
+         "local-inference": all_doc_reqs,
+         "paddleocr": load_requirements("requirements/extra-paddleocr.in"),
+         "embed-huggingface": load_requirements("requirements/ingest/embed-huggingface.in"),
+-        "embed-octoai": load_requirements("requirements/ingest/embed-octoai.in"),
+-        "embed-vertexai": load_requirements("requirements/ingest/embed-vertexai.in"),
+         "openai": load_requirements("requirements/ingest/embed-openai.in"),
+         "bedrock": load_requirements("requirements/ingest/embed-aws-bedrock.in"),
+         "databricks-volumes": load_requirements("requirements/ingest/databricks-volumes.in"),
