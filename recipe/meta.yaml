@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
   sha256: ce6b7c1307287e6339a41bb442fe5739756b552f40e092e252ebb6eb1cb16d57
+  patches:
+    - setup.patch
 
 build:
   noarch: python
