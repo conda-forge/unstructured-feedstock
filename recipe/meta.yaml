@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: f2ed56bffce46dc1e77ab13732a6d6ff989a7793df0ccc64bb63e58af242aa39
+  sha256: 190b51fbd282602e68b44708798dedd85479a718e4e50a300f12abaa5643df32
   patches:
     - setup.patch
 
@@ -53,7 +53,7 @@ requirements:
     - tqdm ==4.66.2
     - typing-extensions
     - typing_inspect ==0.9.0
-    - unstructured-client <=0.18.0
+    - unstructured-client
     - urllib3 ==1.26.18
     - wrapt
 
