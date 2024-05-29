@@ -1,6 +1,6 @@
-From d32acbaa679bb6e2797bf51572a3bc3790e872c0 Mon Sep 17 00:00:00 2001
+From 3e985b4a5255d37991be6f9dd00f16a6b29444eb Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Fri, 5 Apr 2024 19:20:53 -0500
+Date: Wed, 29 May 2024 21:48:23 +0200
 Subject: [PATCH] Update setup.py
 
 ---
@@ -8,7 +8,7 @@ Subject: [PATCH] Update setup.py
  1 file changed, 4 deletions(-)
 
 diff --git a/setup.py b/setup.py
-index 0c122ee42f..164318b384 100644
+index a51a842eaa..050044a153 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -128,7 +128,6 @@ def load_requirements(file_list: Optional[Union[str, List[str]]] = None) -> List
@@ -33,6 +33,6 @@ index 0c122ee42f..164318b384 100644
          "embed-huggingface": load_requirements("requirements/ingest/embed-huggingface.in"),
 -        "embed-octoai": load_requirements("requirements/ingest/embed-octoai.in"),
 -        "embed-vertexai": load_requirements("requirements/ingest/embed-vertexai.in"),
+         "embed-voyageai": load_requirements("requirements/ingest/embed-voyageai.in"),
          "openai": load_requirements("requirements/ingest/embed-openai.in"),
          "bedrock": load_requirements("requirements/ingest/embed-aws-bedrock.in"),
-         "databricks-volumes": load_requirements("requirements/ingest/databricks-volumes.in"),
