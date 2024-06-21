@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.14.6" %}
+{% set version = "0.14.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 5dddf44908faa0f5250c02f41768fd4ce3792496d3e00258fd33f68c24b902c1
+  sha256: 219f6ae8a8c5a23e5e6944d3a78d1c7f162ee01e7c6034afe2e5052eef679918
   patches:
     - setup.patch
 
