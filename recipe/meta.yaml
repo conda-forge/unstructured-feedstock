@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.14.9" %}
+{% set version = "0.14.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 52b651d28746172e03d6352e2ab5eb5aec19e9f4bf5ddb77110f11708798b002
+  sha256: 7076567a27e204ddbe129eb99e66bcc90c1cae6c4d4138506f6d555a527be73f
   patches:
     - setup.patch
 
@@ -21,6 +21,7 @@ requirements:
     - python >=3.9,<3.12
     - pip
   run:
+    - psutil
     - python >=3.9,<3.12
     - backoff
     - beautifulsoup4
