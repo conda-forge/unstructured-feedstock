@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.15.8" %}
+{% set version = "0.15.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: f0f2c83a86d754df79b17f40c01a446c6f38ded4c253d1da1c2c0ec22f6ffc37
+  sha256: de26d0e38bac4aa3ae2950f175d0c53a5ccae5c45806b67f55a4af8dea4c407a
   patches:
     - setup.patch
 
@@ -21,6 +21,7 @@ requirements:
     - python >=3.9,<3.12
     - pip
   run:
+    - python-oxmsg
     - psutil
     - python >=3.9,<3.12
     - backoff
