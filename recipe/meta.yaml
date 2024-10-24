@@ -20,6 +20,7 @@ requirements:
   host:
     - python >=3.9,<3.12
     - pip
+    - setuptools
   run:
     - html5lib
     - typing_extensions
