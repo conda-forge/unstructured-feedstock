@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.15.14" %}
+{% set version = "0.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 876546c308c257314865996ce15745139c9fd4f79c7b4f09ad9d719d466b5b55
-  patches:
-    - setup.patch
+  sha256: 03608b5189a004412cd618ce2d083ff926c56dbbca41b41c92e08ffa9e2bac3a
 
 build:
   noarch: python
@@ -20,7 +18,9 @@ requirements:
   host:
     - python >=3.9,<3.12
     - pip
+    - setuptools
   run:
+    - html5lib
     - typing_extensions
     - python-oxmsg
     - psutil
