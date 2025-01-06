@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.16.11" %}
+{% set version = "0.16.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 33ebf68aae11ce33c8a96335296557b5abd8ba96eaba3e5a1554c0b9eee40bb5
+  sha256: c3133731c6edb9c2f474e62cb2b560cd0a8d578c4532ec14d8c0941e401770b0
 
 build:
   noarch: python
@@ -16,15 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
+    - ndjson
     - html5lib
     - typing_extensions
     - python-oxmsg
     - psutil
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - backoff
     - beautifulsoup4
     - certifi =2024.2.2
@@ -67,6 +68,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Unstructured-IO/unstructured
