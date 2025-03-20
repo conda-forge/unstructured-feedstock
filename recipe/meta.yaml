@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: bf73274ea9861d73b3d41db79509c673de12b6de7a01205ba8bd1ac964a4de45
+  sha256: af18c3caef0a6c562cf77e34ee8b6ff522b605031d2336ffe565df66f126aa46
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ requirements:
     - marshmallow =3.20.2
     - mypy_extensions =1.0.0
     - nltk
-    - numpy <2
+    - numpy
     - packaging =23.2
     - python-dateutil =2.8.2
     - python-iso639
