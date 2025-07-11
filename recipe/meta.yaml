@@ -1,5 +1,6 @@
 {% set name = "unstructured" %}
 {% set version = "0.18.5" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
