@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.18.9" %}
+{% set version = "0.18.11" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 1e0df6f01248a05d31dc6b23ca7c99d17fd0e123438a0e0b6c95d4626b133871
+  sha256: cf177d2a212a8bcd3a5a6750d8400c079764d30dabdb6605e7ba0a65679e00a0
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - beautifulsoup4
     - certifi =2024.2.2
     - chardet
-    - charset-normalizer =3.3.2
+    - charset-normalizer
     - click =8.1.7
     - dataclasses-json
     - emoji
