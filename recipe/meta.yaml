@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.18.27" %}
+{% set version = "0.18.32" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: fae7fbe5d664cd5ebc558a54ab12d2c924e19b85061a614f58fd0b1fdb8e1c2e
+  sha256: 40a7cf4a4a7590350bedb8a447e37029d6e74b924692576627b4edb92d70e39d
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - numba
     - ndjson
     - html5lib
     - typing_extensions
