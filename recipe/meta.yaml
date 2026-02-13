@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
   run:
     - numba >=0.60.0,<1.0.0
     - ndjson
