@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.20.6" %}
+{% set version = "0.20.8" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 38432ffc32bf6e5683273ce53adade75bd8e0ac69240819b5f63b64fb9a5a93b
+  sha256: 520b8aa035d5e3600b0e9c3462884de543350433678adf0ef0284fbcc1d275df
 
 build:
   noarch: python
@@ -61,7 +61,7 @@ requirements:
     - typing_inspect =0.9.0
     - unstructured-client >=0.25.9,<1.0.0
     - urllib3 =1.26.18
-    - wrapt >=2.1.1,<3.0.0
+    - wrapt >=1.0.0,<2.0.0
 
 test:
   imports:
