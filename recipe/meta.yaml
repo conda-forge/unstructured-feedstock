@@ -65,6 +65,7 @@ requirements:
     - unstructured-client >=0.25.9,<1.0.0
     - urllib3 =1.26.18
     - wrapt >=1.0.0,<2.0.0
+    - typer>=0.24.0
 
 test:
   imports:
