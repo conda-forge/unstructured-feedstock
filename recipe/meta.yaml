@@ -1,5 +1,5 @@
 {% set name = "unstructured" %}
-{% set version = "0.22.20" %}
+{% set version = "0.22.21" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unstructured-{{ version }}.tar.gz
-  sha256: 8e195f1c1cc27a2149b520f148eb1b0bf248def8087245dbbfd151d813baff93
+  sha256: 8ebb44e6ed4b089872e841161d6fde9b9dee1ce207f048756a2538e0125da9cc
 
 build:
   noarch: python
