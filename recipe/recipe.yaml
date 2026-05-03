@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: unstructured
-  version: "0.22.23"
+  version: "0.22.26"
   python_min: "3.11"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/unstructured-${{ version }}.tar.gz
-  sha256: 75051c5a1dcfeca3c77149fc5e0ae5f1f0ee0fc31ec7f93bb259ce70dc4d5fb8
+  sha256: 86d921349e19116dc3e2a58a5b1bb7d725b743d0380985e15e2ae4799c4a3399
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
