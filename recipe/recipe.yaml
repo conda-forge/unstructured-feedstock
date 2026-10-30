@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: unstructured
-  version: "0.27.32"
+  version: 0.27.36
   python_min: '3.11'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/unstructured-${{ version }}.tar.gz
-  sha256: 0371e88dac07405662dda30389dc4800e1e302bf9af53325675cad3569d7d863
+  sha256: 2ed0a75753ea94daac065933a8dce03817d434f75257361dc523228a8d8248fb
 
 build:
   number: 0
@@ -61,6 +61,7 @@ requirements:
     - urllib3 =1.26.18
     - wrapt >=2.1.1,<3.0.0
     - nh3 >=0.3.0,<1.0.0
+    - certifi >=2026.10.19
 tests:
   - python:
       imports:
