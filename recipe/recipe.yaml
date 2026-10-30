@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: unstructured
   version: 0.27.36
-  python_min: '3.11'
+  python_min: '3.12'
 
 package:
   name: ${{ name|lower }}
