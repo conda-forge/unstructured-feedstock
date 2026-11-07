@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: unstructured
-  version: 0.27.36
+  version: 0.27.37
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/unstructured-${{ version }}.tar.gz
-  sha256: 2ed0a75753ea94daac065933a8dce03817d434f75257361dc523228a8d8248fb
+  sha256: 27c31aa319a245fdd800dd5569654f358c7823f37cbba8271933d2b534a7cde2
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
     - hatchling
   run:
-    - filelock >=3.12.0,<4.0.0
+    - filelock >=4.2.1,<5.0.0
     - python-installer >=0.7.0,<1.0.0
     - spacy >=3.7.0,<4.0.0
     - numba >=0.60.0,<1.0.0
